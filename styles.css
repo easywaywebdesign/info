@@ -43,24 +43,24 @@ div {
 
 .container {
   max-width: 1200px;
-  margin: 40px auto;        /* margem em cima/baixo + centralização horizontal */
-  padding: 0 40px;          /* espaço interno à esquerda e direita */
-  box-sizing: border-box;   /* garante que o padding não “empurra” o conteúdo para fora */
+  margin: 40px auto;       
+  padding: 0 40px;          
+  box-sizing: border-box;  
 }
 
 body {
  font-family:'Arimo',sans-serif;
- background-color:#FFEECE;
+ background-color:#FFF8EE;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  max-width: 1200px;     /* largura máxima */
-  margin: 0 auto;         /* centraliza horizontalmente */
-  padding: 0 20px;        /* espaçamento interno nas laterais */
+  max-width: 1200px;    
+  margin: 0 auto;         
+  padding: 0 20px;       
 }
 
 .espaco {
-  margin-bottom: 30px; /* ou qualquer valor que quiseres */
+  margin-bottom: 30px; 
   margin-top: 30px;
 }
 
@@ -94,7 +94,39 @@ h2 {
   font-size: 20px;
   margin-bottom: 0px;
   text-transform: uppercase;  
-  color: #000000; /* Alterar cor do texto */
+  color: #000000; 
+}
+
+/*INDEX*/
+
+.containerhome {
+    display: flex;
+  }
+
+.home1 {
+  font-size: 19px;  
+  padding: 20px;             
+  border-radius: 8px;         
+  color: #333;              
+  justify-content: center;  
+  align-items: center;     
+  max-width: 210px;          
+  margin: 8px auto;          
+  padding: 20px;
+  background-color: #FFEECE;
+}
+
+.home2 {
+  font-size: 19px;  
+  padding: 20px;             
+  border-radius: 8px;         
+  color: #333;              
+  justify-content: center;  
+  align-items: center;     
+  max-width: 210px;          
+  margin: 8px auto;          
+  padding: 20px;
+  background-color: #FFEECE;
 }
 
 /*SOBRE NÓS*/
@@ -135,7 +167,7 @@ h2 {
 .meo {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra os itens horizontalmente */
+  justify-content: center; 
   gap: 50px;
   text-align: left;
 }
@@ -158,11 +190,11 @@ h2 {
 /*TESTEMUNHOS*/
 /*FILIPE*/
 .filipe {
-  display: flex ;            /* Muito importante! */
-  justify-content: center;  /* Centra horizontalmente */
-  align-items: center;      /* Centra verticalmente */
+  display: flex ;           
+  justify-content: center;  
+  align-items: center;     
   gap: 50px;
-  flex-direction: row-reverse; /* imagem à esquerda, texto à direita */
+  flex-direction: row-reverse; 
   text-align: left;
 }
 .filipe img {
@@ -192,9 +224,9 @@ h2 {
 
 /*LUISA*/
 .luisa {
-  display: flex ;            /* Muito importante! */
-  justify-content: center;  /* Centra horizontalmente */
-  align-items: center;      /* Centra verticalmente */
+  display: flex ;           
+  justify-content: center; 
+  align-items: center;      
   gap: 50px;
   text-align: left;
 }
@@ -215,13 +247,13 @@ h2 {
 
 .falaluisa {
   background-color: #DDB899;  
-  padding: 20px;              /* espaço interno para o texto não encostar nas bordas */
-  border-radius: 8px;         /* cantos arredondados, opcional */
-  color: #333;                /* cor do texto */
-  justify-content: center;  /* Centra horizontalmente */
-  align-items: center;      /* Centra verticalmente */
-  max-width: 900px;           /* largura máxima da caixa, opcional */
-  margin: 5px auto;          /* margem para centralizar, opcional */
+  padding: 20px;              
+  border-radius: 8px;         
+  color: #333;               
+  justify-content: center; 
+  align-items: center;      
+  max-width: 900px;        
+  margin: 5px auto;        
 }
 
 /*GALERIA*/
@@ -267,11 +299,11 @@ h2 {
 
 /*PERGUNTAS*/
 .perguntas p {
-  color: #685D5D;                /* cor do texto */
+  color: #685D5D;          
 }
 
 .perguntas a {
-   color: #685D5D;                /* cor do texto */
+   color: #685D5D;               
 }
 
 /*CONTACTE-NOS*/
@@ -279,7 +311,7 @@ h2 {
   max-width: 700px;
   margin: 0 auto;
   padding: 40px 20px;
-  background-color: #FFEECE; 
+  background-color: #FFF8EE; 
   border-radius: 10px;
 }
 
@@ -308,7 +340,7 @@ textarea {
 }
 
 button {
-  background-color: #FFEECE;
+  background-color: #FFF8EE;
   color: #333;
   padding: 2px 10px;
   border: 1px solid #00000040;
@@ -317,7 +349,7 @@ button {
 }
 
 button:hover {
-  background-color: #FFEECE;
+  background-color: #FFF8EE;
 }
 
 
