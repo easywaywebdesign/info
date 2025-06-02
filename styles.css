@@ -99,7 +99,24 @@ h2 {
 /*INDEX*/
 
 .containerhome {
-  display: flex;
+ display: flex;
+  justify-content: center;
+  gap: 16px; /* Espaço entre as colunas */
+  flex-wrap: wrap; /* Permite quebrar linha se necessário */
+  padding: 10px;
+  box-sizing: border-box;}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+  .containerhome {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; 
+  }
+
+  .home1, .home2 {
+    max-width: 90%; 
+  }
 }
 
 .home1 {
@@ -171,88 +188,113 @@ h2 {
   text-align: left;
 }
 
-.meo img {
-  width: 250px;
+
+.conteudo-meo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 10%; /* menos padding lateral para mais espaço interno */
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.conteudo-meo img {
+  width: 300px;
+  max-width: 300px;
+  height: auto;
   border-radius: 35px;
+  flex-shrink: 0;
 }
 
-.meo .info {
-  max-width: 500px;
-}
-
-.meo .info p {
+.texto-motivacao {
+  flex: 1 1 300px; /* permite crescer mais e inicia com 400px */
+  max-width: 400px; /* aumenta o máximo para o texto poder expandir */
+  padding: 1rem;
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
   line-height: 1.6;
-  font-size: 17px;
-  margin-bottom: 10px;
+  text-align: left;
+  box-sizing: border-box;
 }
+
 
 /*TESTEMUNHOS*/
 /*FILIPE*/
 .filipe {
-  display: flex ;           
-  justify-content: center;  
-  align-items: center;     
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
-  flex-direction: row-reverse; 
+  flex-wrap: nowrap;
+  text-align: right;
+}
+
+.luisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: nowrap;
   text-align: left;
+  flex-direction: row-reverse; /* imagem à direita, texto à esquerda */
 }
-.filipe img {
-  width: 350px;
+
+.filipe img, .luisa img {
+  max-width: 300px; /* limite para desktop */
+  width: 100%;
+  height: auto;
   border-radius: 10px;
+  flex-shrink: 0; /* impede encolhimento da imagem */
 }
-  
-.filipe .info {
+
+.filipe .info, .luisa .info {
   max-width: 500px;
+  font-size: 17px;
+  flex-shrink: 1; /* permite que o texto encolha */
+}
+
+/* Ajustes para ecrãs pequenos */
+@media (max-width: 768px) {
+  .filipe, .luisa {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .filipe .info, .luisa .info {
+    max-width: 100%; /* texto ocupa toda a largura */
+  }
+  
+  .filipe img, .luisa img {
+    max-width: 100%; /* imagem ocupa toda a largura */
+  }
 }
   
-.filipe .info p {
-  line-height: 1.7;
-  font-size: 18px;
-}
-  
-.maefilipe {
+.maefilipe p {
   background-color: #DDB899;  
-  padding: 20px;              
+  padding: 18px;              
   border-radius: 8px;        
   color: #333;              
   justify-content: center;  
   align-items: center;     
   max-width: 900px;           
-  margin: 5px auto;         
+  margin: 4px auto;   
+  margin-bottom: 0;      
 }
 
 /*LUISA*/
-.luisa {
-  display: flex ;           
-  justify-content: center; 
-  align-items: center;      
-  gap: 50px;
-  text-align: left;
-}
 
-.luisa img {
-  width: 350px;
-  border-radius: 10px;
-}
-
-.luisa .info {
-  max-width: 500px;
-}
-
-.luisa .info p {
-  line-height: 1.7;
-  font-size: 18px;
-}
-
-.falaluisa {
+.falaluisa p {
   background-color: #DDB899;  
-  padding: 20px;              
+  padding: 18px;              
   border-radius: 8px;         
   color: #333;               
   justify-content: center; 
   align-items: center;      
   max-width: 900px;        
-  margin: 5px auto;        
+  margin: 5px auto;    
+  margin-bottom: 0;    
 }
 
 /*GALERIA*/
